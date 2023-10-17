@@ -1,15 +1,15 @@
-# Uncomment the pip install code below if you haven't installed these libraries yet
-#!pip install pandas
-#!pip install zipfile
-#!pip install kaggle
+
+!pip install pandas
+!pip install zipfile
+!pip install kaggle
 
 # import the pandas library
 import pandas as pd
 
-# import zipfile library (we will use this to extract the file downloaded from Kaggle)
+# import zipfile library 
 import zipfile
 
-# import kaggle library (we will use this to download the dataset programatically from Kaggle)
+# import kaggle library 
 import kaggle
 Warning: Your Kaggle API key is readable by other users on this system! To fix this, you can run 'chmod 600 /home/mochen/.kaggle/kaggle.json'
 Documentation on how to use the Kaggle API https://www.kaggle.com/docs/api
@@ -133,5 +133,4 @@ time	count	temp_real_C	temp_feels_like_C	humidity_percent	wind_speed_kph	weather
 2	2015-01-04 02:00:00	134	2.5	2.5	0.965	0.0	Clear	0.0	1.0	winter
 3	2015-01-04 03:00:00	72	2.0	2.0	1.000	0.0	Clear	0.0	1.0	winter
 4	2015-01-04 04:00:00	47	2.0	0.0	0.930	6.5	Clear	0.0	1.0	winter
-# writing the final dataframe to an excel file that we will use in our Tableau visualisations. The file will be the 'london_bikes_final.xlsx' file and the sheet name is 'Data'
-bikes.to_excel('london_bikes_final.xlsx', sheet_name='Data')
+
